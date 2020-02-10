@@ -7,18 +7,18 @@ public class PlayerController : MonoBehaviour
 {
 
     public float moveSpeed = 3f;
-    public float rotateSpeed = 120f;
+    public float rotateSpeed = 250f;
 
     public Rigidbody2D rb;
-    public float moveAngleThresh = 35;
-    public float turnThresh = 90;
+    public float moveAngleThresh = 45f;
+    public float turnThresh = 90f;
 
     private float angle;
     private float oppAngle;
     private Quaternion qAngle;
     private Quaternion qAngle180;
     private Quaternion pAngle180;
-    private float change;
+  
 
 
     private Vector2 movement;

@@ -582,9 +582,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  rotateSpeed: 120
+  rotateSpeed: 250
   rb: {fileID: 1480823002}
-  moveAngleThresh: 35
+  moveAngleThresh: 45
   turnThresh: 90
 --- !u!4 &1480823004
 Transform:
