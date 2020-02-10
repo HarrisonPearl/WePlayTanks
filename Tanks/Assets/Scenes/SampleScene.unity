@@ -584,7 +584,7 @@ MonoBehaviour:
   moveSpeed: 3
   rotateSpeed: 120
   rb: {fileID: 1480823002}
-  moveAngleThresh: 8
+  moveAngleThresh: 35
   turnThresh: 90
 --- !u!4 &1480823004
 Transform:
