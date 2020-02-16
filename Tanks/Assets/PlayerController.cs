@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Mathf.Abs(movement.x) > 0.1 || Mathf.Abs(movement.y) > 0.1)
+        if (Mathf.Abs(movement.x) > 0.15 || Mathf.Abs(movement.y) > 0.15)
         {
 
             angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
@@ -48,12 +48,10 @@ public class PlayerController : MonoBehaviour
             else{
               oppAngle = angle + 180;
             }
-            //Debug.Log(oppAngle);
 
             qAngle = Quaternion.AngleAxis(angle, Vector3.forward);
             qAngle180 = Quaternion.AngleAxis(oppAngle, Vector3.forward);
 
-            //Debug.Log(Mathf.Abs(Quaternion.Angle(rb.transform.rotation, qAngle)));
             if (Mathf.Abs(Quaternion.Angle(rb.transform.rotation, qAngle)) <= turnThresh){
               rb.transform.rotation = Quaternion.RotateTowards(rb.transform.rotation, qAngle, rotateSpeed * Time.deltaTime);
 
@@ -74,14 +72,6 @@ public class PlayerController : MonoBehaviour
         }
 
 
-
-        // pAngle180 = rb.transform.rotation;
-        // pAngle180.y = -pAngle180.y;
-        // pAngle180.z = -pAngle180.z;
-        // if (Mathf.Abs(Quaternion.Angle(rb.transform.rotation, qAngle)) <= moveAngleThresh || Mathf.Abs(Quaternion.Angle(pAngle180, qAngle)) <= moveAngleThresh)
-        // {
-        //     rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        // }
     }
 
 

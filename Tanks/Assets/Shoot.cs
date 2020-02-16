@@ -28,7 +28,6 @@ public class Shoot : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(shoot);
         if(shoot > 0.9 && Time.time > nextShot)
         {
             nextShot = Time.time + fireRate;
