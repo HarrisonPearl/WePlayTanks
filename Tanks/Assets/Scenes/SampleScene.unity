@@ -5344,7 +5344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad79aee986b5c6444858a2b3d33b9679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 800
+  rotateSpeed: 400
   tankRb: {fileID: 1480823002}
 --- !u!1 &933213683
 GameObject:

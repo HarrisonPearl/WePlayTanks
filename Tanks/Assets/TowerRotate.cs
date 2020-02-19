@@ -26,7 +26,7 @@ public class TowerRotate : MonoBehaviour
     void FixedUpdate()
     {
         transform.position = tankRb.position;
-        if (Mathf.Abs(movement.x) > 0.1 || Mathf.Abs(movement.y) > 0.1)
+        if (Mathf.Abs(movement.x) > 0.05 || Mathf.Abs(movement.y) > 0.05)
         {
             angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90;
             qAngle = Quaternion.AngleAxis(angle, Vector3.forward);
