@@ -23,7 +23,7 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       shoot = Input.GetAxis(PlayerTrigger);
+            shoot = Input.GetAxis(PlayerTrigger);
     }
 
     void FixedUpdate()

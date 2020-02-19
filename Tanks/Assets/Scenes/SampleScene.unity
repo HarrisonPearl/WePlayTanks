@@ -955,7 +955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 0.5
   bulletSpeed: 13
-  offSet: 0.2
+  offSet: 0.3
   bullet: {fileID: 7066713246382716707, guid: 1a3391c7f07fe294d834be4e7aa40092, type: 3}
   PlayerTrigger: RightTrigger
 --- !u!199 &520355877
@@ -10902,7 +10902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 0.5
   bulletSpeed: 13
-  offSet: 0.2
+  offSet: 0.3
   bullet: {fileID: 7066713246382716707, guid: 1a3391c7f07fe294d834be4e7aa40092, type: 3}
   PlayerTrigger: Space
 --- !u!212 &975618285
