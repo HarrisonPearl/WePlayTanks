@@ -7,6 +7,11 @@ public class Explode : MonoBehaviour
     private int bouncecount = 0;
     public GameObject explosion;
     public GameObject miniExplosion;
+    private Vector2 incidentVelocity;
+    void FixedUpdate()
+    {
+        incidentVelocity = GetComponent<Rigidbody2D>().velocity;
+    }
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.name == "TankBodyA")
@@ -27,11 +32,19 @@ public class Explode : MonoBehaviour
         else
         {
             bouncecount++;
-            if (bouncecount > 1) { 
-            Destroy(gameObject);
-            GameObject minie = Instantiate(miniExplosion) as GameObject;
-            minie.transform.position = transform.position;
-        }
+            if (bouncecount > 1)
+            {
+                Destroy(gameObject);
+                GameObject minie = Instantiate(miniExplosion) as GameObject;
+                minie.transform.position = transform.position;
+            }
+            else
+            {
+                Vector2 direction = Vector2.Reflect(incidentVelocity, other.contacts[0].normal);
+                GetComponent<Rigidbody2D>().velocity = direction;
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90;
+                GetComponent<Rigidbody2D>().SetRotation(angle);
+            }
         }
     }
 }
