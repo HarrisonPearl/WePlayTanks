@@ -32,7 +32,7 @@ public class Explode : MonoBehaviour
         else
         {
             bouncecount++;
-            if (bouncecount > 1)
+            if (bouncecount > 1 | other.collider.tag == "Missile")
             {
                 Destroy(gameObject);
                 GameObject minie = Instantiate(miniExplosion) as GameObject;
