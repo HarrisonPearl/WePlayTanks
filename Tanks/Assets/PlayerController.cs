@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
     public float moveAngleThresh = 45f;
     public float turnThresh = 90f;
 
+    public string PlayerMoveX;
+    public string PlayerMoveY;
+
     private float angle;
     private float oppAngle;
     private Quaternion qAngle;
@@ -31,8 +34,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw(PlayerMoveX);
+        movement.y = Input.GetAxisRaw(PlayerMoveY);
 
     }
 

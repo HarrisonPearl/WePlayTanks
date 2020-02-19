@@ -8,7 +8,7 @@ public class Shoot : MonoBehaviour
     public float bulletSpeed;
     public float offSet;
     public GameObject bullet;
-
+    public string PlayerTrigger;
 
     private float nextShot;
     private float shoot;
@@ -23,14 +23,16 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       shoot = Input.GetAxis("RightTrigger");
+       shoot = Input.GetAxis(PlayerTrigger);
     }
 
     void FixedUpdate()
     {
+
+
         if(shoot > 0.9 && Time.time > nextShot)
         {
-            nextShot = Time.time + fireRate;
+                nextShot = Time.time + fireRate;
             GetComponent<ParticleSystem>().Play();
             var bulletClone = Instantiate(bullet, transform.position + transform.up * offSet, transform.rotation);
             bulletClone.GetComponent<Rigidbody2D>().AddForce(transform.up * bulletSpeed * 10);

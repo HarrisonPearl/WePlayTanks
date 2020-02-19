@@ -10,6 +10,9 @@ public class TowerRotate : MonoBehaviour
     private Quaternion qAngle;
     public Rigidbody2D tankRb;
 
+    public string PlayerRotateX;
+    public string PlayerRotateY;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +22,8 @@ public class TowerRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Mouse X");
-        movement.y = Input.GetAxisRaw("Mouse Y");
+        movement.x = Input.GetAxisRaw(PlayerRotateX);
+        movement.y = Input.GetAxisRaw(PlayerRotateY);
     }
 
     void FixedUpdate()
