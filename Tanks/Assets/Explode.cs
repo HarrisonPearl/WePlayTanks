@@ -5,13 +5,20 @@ using UnityEngine;
 public class Explode : MonoBehaviour
 {
     private int bouncecount = 0;
+    private int time = 0;
     public GameObject explosion;
     public GameObject miniExplosion;
     private Vector2 incidentVelocity;
     void FixedUpdate()
     {
         incidentVelocity = GetComponent<Rigidbody2D>().velocity;
+        time++;
+        if (time==5)
+        {
+            GetComponent<CapsuleCollider2D>().isTrigger = false;
+        }
     }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.name == "TankBodyA")
@@ -30,7 +37,7 @@ public class Explode : MonoBehaviour
             Destroy(gameObject);
         }
         else
-        {
+            {
             bouncecount++;
             if (bouncecount > 1 | other.collider.tag == "Missile")
             {
