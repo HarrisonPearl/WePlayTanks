@@ -24,10 +24,10 @@ public class SceneHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(victoryTime);
+        //print(victoryTime);
         currTime = Time.fixedTime;
-        playerArray = GameObject.FindGameObjectsWithTag("Player"); 
-        if (Input.GetKeyDown(KeyCode.R))
+        playerArray = GameObject.FindGameObjectsWithTag("Player");
+        if (Input.GetButtonDown("Reset"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 

@@ -8,7 +8,7 @@ public class shoot3 : MonoBehaviour
     public float bulletSpeed;
     public float offSet;
     public GameObject bullet;
-    public string PlayerTrigger;
+    public string PlayerTrigger = "RightTrigger1";
 
     private float nextShot;
     private float shoot;
