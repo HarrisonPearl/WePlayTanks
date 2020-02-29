@@ -18,7 +18,10 @@ public class shoot3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if (transform.parent.transform.parent.Find("TankBodyB"))
+        {
+            PlayerTrigger = "RightTrigger2";
+        }
     }
 
     // Update is called once per frame
