@@ -36,6 +36,11 @@ public class Explode : MonoBehaviour
             Destroy(GameObject.Find("TankB"), .2f);
             Destroy(gameObject);
         }
+       // else if (other.collider.tag == "PowerUp")
+       // {
+        //    print("help");
+       //     Physics2D.IgnoreCollision(other.collider, gameObject.GetComponent<Collider2D>(), true);
+      //  }
         else
             {
             bouncecount++;

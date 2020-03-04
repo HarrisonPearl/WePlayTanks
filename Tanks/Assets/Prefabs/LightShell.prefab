@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7066713246382716709}
   - component: {fileID: -4720529521961016560}
   - component: {fileID: -3496358141359106875}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LightShell
   m_TagString: Missile
   m_Icon: {fileID: 0}
