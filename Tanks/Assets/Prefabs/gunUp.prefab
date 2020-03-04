@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6404785873881846930}
   - component: {fileID: -8476247926643469970}
   m_Layer: 0
-  m_Name: leftGunUp
+  m_Name: gunUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 0.75
-  bulletSpeed: 12
+  bulletSpeed: 16
   offSet: 0.15
   bullet: {fileID: 7066713246382716707, guid: 1a3391c7f07fe294d834be4e7aa40092, type: 3}
   PlayerTrigger: RightTrigger1

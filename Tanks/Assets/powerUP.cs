@@ -24,11 +24,14 @@ public class powerUP : MonoBehaviour
     {
         if (collision.collider.GetComponent<PlayerController>())
         {
+
             //Debug.Log("player hit");
             gun = collision.transform.parent.Find("Tower").Find("Gun");
             var nGun = Instantiate(newGun, gun.parent);
             nGun.transform.position = gun.position;
             nGun.transform.rotation = gun.rotation;
+            if (collision.collider.GetComponent<PlayerController>().moveSpeed > 2)
+                nGun.GetComponent<shoot3>().bulletSpeed *= 1.5f;
             Destroy(gun.gameObject);
 
 

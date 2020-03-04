@@ -5,24 +5,29 @@ using UnityEngine;
 public class SpeedBoost : MonoBehaviour
 {
     public int tankSpeedModifier;
-    public int bulletSpeedModifier;
+    private float bulletSpeedModifier = 1.5f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.GetComponent<PlayerController>())
         {
-            collision.transform.GetComponent<PlayerController>().moveSpeed *= tankSpeedModifier;
-            collision.transform.GetComponent<PlayerController>().rotateSpeed *= tankSpeedModifier;
-            if (collision.transform.Find("Tower"))
+            if (collision.transform.GetComponent<PlayerController>().moveSpeed < 2)//probably shouldnt be a const
             {
-                collision.transform.Find("Tower").Find("Gun").GetComponent<Shoot>().bulletSpeed *= bulletSpeedModifier;
-            }
-            if (collision.transform.Find("gunUp(Clone)"))
-            {
-                collision.transform.Find("Tower").Find("Gun").GetComponent<shoot3>().bulletSpeed *= bulletSpeedModifier;
-            }
+                collision.transform.GetComponent<PlayerController>().moveSpeed *= tankSpeedModifier;
+                collision.transform.GetComponent<PlayerController>().rotateSpeed *= tankSpeedModifier;
+                if (collision.transform.parent.transform.Find("Tower"))
+                {
+                    if (collision.transform.parent.transform.Find("Tower").Find("Gun"))
+                        collision.transform.parent.transform.Find("Tower").Find("Gun").GetComponent<Shoot>().bulletSpeed *= bulletSpeedModifier;
+                    if (collision.transform.parent.transform.Find("Tower").Find("gunUp(Clone)"))
+                        collision.transform.parent.transform.Find("Tower").Find("gunUp(Clone)").GetComponent<shoot3>().bulletSpeed *= bulletSpeedModifier;
 
-            Destroy(gameObject);
+                }
+
+
+                Destroy(gameObject);
+            }
+            
         }
     }
 }

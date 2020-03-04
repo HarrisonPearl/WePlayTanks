@@ -49,7 +49,7 @@ public class SceneHandler : MonoBehaviour
                 }
                 else
                 {
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(0);
                 }
             }
         }
