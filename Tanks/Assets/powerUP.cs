@@ -20,9 +20,9 @@ public class powerUP : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.GetComponent<PlayerController>())
+        if (collision.transform.GetComponent<PlayerController>())
         {
 
             //Debug.Log("player hit");
@@ -30,7 +30,7 @@ public class powerUP : MonoBehaviour
             var nGun = Instantiate(newGun, gun.parent);
             nGun.transform.position = gun.position;
             nGun.transform.rotation = gun.rotation;
-            if (collision.collider.GetComponent<PlayerController>().moveSpeed > 2)
+            if (collision.transform.GetComponent<PlayerController>().moveSpeed > 2)
                 nGun.GetComponent<shoot3>().bulletSpeed *= 1.5f;
             Destroy(gun.gameObject);
 

@@ -506,8 +506,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2892eb51bf4a26b4db51fdb13185fda4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1.4
-  rotateSpeed: 250
+  moveSpeed: 1.6
+  rotateSpeed: 280
   rb: {fileID: 652985541264205452}
   moveAngleThresh: 45
   turnThresh: 90
