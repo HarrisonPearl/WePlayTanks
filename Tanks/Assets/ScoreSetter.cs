@@ -10,12 +10,12 @@ public class ScoreSetter : MonoBehaviour
     void Start()
     {
   
-        GetComponent<Text>().text = PlayerPrefs.GetInt(TankXScore,-1).ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        GetComponent<Text>().text = PlayerPrefs.GetInt(TankXScore, -1).ToString();
+
     }
 }
