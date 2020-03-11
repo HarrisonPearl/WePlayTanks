@@ -9,6 +9,9 @@ public class Explode : MonoBehaviour
     public GameObject explosion;
     public GameObject miniExplosion;
     private Vector2 incidentVelocity;
+
+    private int oldScore;
+
     void FixedUpdate()
     {
         incidentVelocity = GetComponent<Rigidbody2D>().velocity;
@@ -26,6 +29,8 @@ public class Explode : MonoBehaviour
             GameObject e = Instantiate(explosion) as GameObject;
             e.transform.position = GameObject.Find("TankBodyA").transform.position;
             Destroy(GameObject.Find("TankA"), .2f);
+            oldScore = PlayerPrefs.GetInt("TankBScore");
+            PlayerPrefs.SetInt("TankBScore", oldScore+1);
             Destroy(gameObject);
 
         }
@@ -34,6 +39,8 @@ public class Explode : MonoBehaviour
             GameObject e = Instantiate(explosion) as GameObject;
             e.transform.position = GameObject.Find("TankBodyB").transform.position;
             Destroy(GameObject.Find("TankB"), .2f);
+            oldScore = PlayerPrefs.GetInt("TankAScore");
+            PlayerPrefs.SetInt("TankAScore", oldScore + 1);
             Destroy(gameObject);
         }
        // else if (other.collider.tag == "PowerUp")
