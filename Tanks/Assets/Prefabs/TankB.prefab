@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad79aee986b5c6444858a2b3d33b9679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 600
+  rotateSpeed: 2000
   tankRb: {fileID: 652985541264205452}
   PlayerRotateX: Player2RotateX
   PlayerRotateY: Player2RotateY
