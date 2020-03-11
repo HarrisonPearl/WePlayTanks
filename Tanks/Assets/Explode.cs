@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Explode : MonoBehaviour
 {
+    public int bounceLimit;
+
     private int bouncecount = 0;
     private int time = 0;
     public GameObject explosion;
@@ -51,7 +53,7 @@ public class Explode : MonoBehaviour
         else
             {
             bouncecount++;
-            if (bouncecount > 1 | other.collider.tag == "Missile")
+            if (bouncecount > bounceLimit | other.collider.tag == "Missile")
             {
                 Destroy(gameObject);
                 GameObject minie = Instantiate(miniExplosion) as GameObject;

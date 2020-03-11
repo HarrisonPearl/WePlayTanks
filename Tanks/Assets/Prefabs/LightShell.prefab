@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828c68fc1ecd72e40a48c03d7e642b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bounceLimit: 1
   explosion: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
   miniExplosion: {fileID: 139366, guid: dbb0947b9abf53549922c1b42b383a26, type: 3}
 --- !u!70 &-3496358141359106875

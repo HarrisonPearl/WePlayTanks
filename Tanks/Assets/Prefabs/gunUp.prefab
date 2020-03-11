@@ -99,7 +99,7 @@ MonoBehaviour:
   fireRate: 0.75
   bulletSpeed: 16
   offSet: 0.15
-  bullet: {fileID: 7066713246382716707, guid: 1a3391c7f07fe294d834be4e7aa40092, type: 3}
+  bullet: {fileID: 7066713246382716707, guid: 6c1c18469b1225a44b9964c132235d9f, type: 3}
   PlayerTrigger: RightTrigger1
 --- !u!198 &-6404785873881846930
 ParticleSystem:
