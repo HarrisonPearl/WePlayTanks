@@ -12,6 +12,8 @@ public class RandomSceneHandler : MonoBehaviour
     private float victoryTime;
     private int playerBScore;
     private int playerAScore;
+    private int randomScene;
+    private int currScene;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,13 @@ public class RandomSceneHandler : MonoBehaviour
         victoryTime = 0;
         playerAScore = PlayerPrefs.GetInt("TankAScore");
         playerBScore = PlayerPrefs.GetInt("TankBScore");
+        randomScene = Random.Range(1, 8);
+        currScene = SceneManager.GetActiveScene().buildIndex;
+
+        if (playerAScore > 4 | playerBScore > 4)
+        {
+            SceneManager.LoadScene("EndScreen");
+        }
 
     }
 
@@ -51,7 +60,12 @@ public class RandomSceneHandler : MonoBehaviour
                 }
                 else
                 {
-                    SceneManager.LoadScene(Random.Range(1, 8));
+                    while (randomScene == currScene)
+                    {
+                        randomScene = Random.Range(1, 8);
+                    }
+
+                    SceneManager.LoadScene(randomScene);
                 }
             }
         }

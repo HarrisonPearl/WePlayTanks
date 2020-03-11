@@ -13,7 +13,7 @@ public class StartGame : MonoBehaviour
     public void loadNextLevel(){
         PlayerPrefs.SetInt("TankAScore", StartingScore);
         PlayerPrefs.SetInt("TankBScore", StartingScore);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(Random.Range(1, 8));
     } 
     
     public void quitGame()
