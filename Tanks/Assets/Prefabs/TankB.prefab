@@ -178,7 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad79aee986b5c6444858a2b3d33b9679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2000
   tankRb: {fileID: 652985541264205452}
   PlayerRotateX: Player2RotateX
   PlayerRotateY: Player2RotateY
@@ -740,7 +739,7 @@ MonoBehaviour:
   fireRate: 0.75
   bulletSpeed: 16
   offSet: 0
-  bullet: {fileID: 7066713246382716707, guid: 1a3391c7f07fe294d834be4e7aa40092, type: 3}
+  bullet: {fileID: 7066713246382716707, guid: a1c612c6fa7c6604dbc4c30bb38e7809, type: 3}
   PlayerTrigger: RightTrigger2
 --- !u!198 &652985541459501682
 ParticleSystem:

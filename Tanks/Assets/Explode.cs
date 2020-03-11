@@ -7,7 +7,6 @@ public class Explode : MonoBehaviour
     public int bounceLimit;
 
     private int bouncecount = 0;
-    private int time = 0;
     public GameObject explosion;
     public GameObject miniExplosion;
     private Vector2 incidentVelocity;
@@ -17,11 +16,6 @@ public class Explode : MonoBehaviour
     void FixedUpdate()
     {
         incidentVelocity = GetComponent<Rigidbody2D>().velocity;
-        time++;
-        if (time==5)
-        {
-            GetComponent<CapsuleCollider2D>().isTrigger = false;
-        }
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -52,6 +46,7 @@ public class Explode : MonoBehaviour
       //  }
         else
             {
+            gameObject.layer = 9;
             bouncecount++;
             if (bouncecount > bounceLimit | other.collider.tag == "Missile")
             {

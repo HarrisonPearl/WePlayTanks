@@ -39,8 +39,8 @@ public class shoot3 : MonoBehaviour
             nextShot = Time.time + fireRate;
             GetComponent<ParticleSystem>().Play();
             var bulletClone0 = Instantiate(bullet, transform.position + transform.up * offSet, transform.rotation);
-            var bulletClone1 = Instantiate(bullet, transform.position + transform.up * offSet, transform.rotation*Quaternion.Euler(0, 0, -sprayAngle));
-            var bulletClone2 = Instantiate(bullet, transform.position + transform.up * offSet, transform.rotation*Quaternion.Euler(0, 0, sprayAngle));
+            var bulletClone1 = Instantiate(bullet, transform.position + transform.up * offSet + transform.right*.3f, transform.rotation*Quaternion.Euler(0, 0, -sprayAngle));
+            var bulletClone2 = Instantiate(bullet, transform.position + transform.up * offSet - transform.right*.3f, transform.rotation*Quaternion.Euler(0, 0, sprayAngle));
             bulletClone0.GetComponent<Rigidbody2D>().AddForce(bulletClone0.transform.up * bulletSpeed * 10);
             bulletClone1.GetComponent<Rigidbody2D>().AddForce(bulletClone1.transform.up * bulletSpeed * 10);
             bulletClone2.GetComponent<Rigidbody2D>().AddForce(bulletClone2.transform.up * bulletSpeed * 10);

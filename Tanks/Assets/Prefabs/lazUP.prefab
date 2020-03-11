@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88714660e889b6a4a8326da265803891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lazPrefab: {fileID: 7066713246382716707, guid: c05eece5acb065b4780d252378a7aa78,
-    type: 3}
+  bulletA: {fileID: 7066713246382716707, guid: ddfef5ee6ccc75d49b9161a39357bcb5, type: 3}
+  bulletB: {fileID: 7066713246382716707, guid: f04c378b5050a8948b577a833993ab2a, type: 3}
 --- !u!1 &3745712773582367579
 GameObject:
   m_ObjectHideFlags: 0

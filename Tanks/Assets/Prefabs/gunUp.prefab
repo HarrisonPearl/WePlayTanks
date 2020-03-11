@@ -98,8 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 0.75
   bulletSpeed: 16
-  offSet: 0.15
-  bullet: {fileID: 7066713246382716707, guid: 6c1c18469b1225a44b9964c132235d9f, type: 3}
+  offSet: 0
+  bullet: {fileID: 7066713246382716707, guid: 14e28ba357de49e4dab90faefb361a9d, type: 3}
   PlayerTrigger: RightTrigger1
 --- !u!198 &-6404785873881846930
 ParticleSystem:

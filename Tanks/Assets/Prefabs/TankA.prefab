@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6869007173785918887}
   - component: {fileID: 6869007173785918872}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6869007173861887724}
   - component: {fileID: 6869007173861887725}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6869007173967888859}
   - component: {fileID: 6869007173967888860}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Track
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6869007174127508683}
   - component: {fileID: 6869007174127508684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 6869007174506096547}
   - component: {fileID: 6869007174506096546}
   - component: {fileID: 6869007174506096549}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TankBodyA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 6869007174729775906}
   - component: {fileID: 6869007174729775907}
   - component: {fileID: 6869007174729775908}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +524,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad79aee986b5c6444858a2b3d33b9679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 1000
   tankRb: {fileID: 6869007174506096546}
   PlayerRotateX: Player1RotateX
   PlayerRotateY: Player1RotateY
@@ -538,7 +537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6869007175173767820}
   - component: {fileID: 6869007175173767821}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GunConnector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +621,7 @@ GameObject:
   - component: {fileID: 6869007175567292252}
   - component: {fileID: 6869007175567292254}
   - component: {fileID: 6869007175567292253}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -707,8 +706,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 0.75
   bulletSpeed: 16
-  offSet: 0.15
-  bullet: {fileID: 7066713246382716707, guid: 1a3391c7f07fe294d834be4e7aa40092, type: 3}
+  offSet: 0
+  bullet: {fileID: 7066713246382716707, guid: 0dc0d96805691ae478a6f962c1cd19d8, type: 3}
   PlayerTrigger: RightTrigger1
 --- !u!198 &6869007175567292254
 ParticleSystem:
@@ -5441,7 +5440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6869007175641492238}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TankA
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5474,7 +5473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6869007175714433535}
   - component: {fileID: 6869007175714433520}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Track
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -179,6 +179,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 
   newGun: {fileID: 6911315156977108130, guid: 3b9a2dbfb16901848ac78b04a9639112, type: 3}
+  bulletA: {fileID: 7066713246382716707, guid: 14e28ba357de49e4dab90faefb361a9d, type: 3}
+  bulletB: {fileID: 7066713246382716707, guid: 27b6c42d8e3f7d04d983e87d3467e304, type: 3}
+  lazerA: {fileID: 7066713246382716707, guid: ddfef5ee6ccc75d49b9161a39357bcb5, type: 3}
+  lazerB: {fileID: 7066713246382716707, guid: f04c378b5050a8948b577a833993ab2a, type: 3}
 --- !u!61 &725601248892306354
 BoxCollider2D:
   m_ObjectHideFlags: 0

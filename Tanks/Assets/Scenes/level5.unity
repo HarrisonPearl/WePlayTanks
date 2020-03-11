@@ -1162,10 +1162,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 652985539893737226, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 652985540077493263, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 652985540294658746, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 652985540616346961, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 652985540829150706, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
         type: 3}
       propertyPath: m_Name
       value: TankB
+      objectReference: {fileID: 0}
+    - target: {fileID: 652985540829150706, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 652985540829150709, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
         type: 3}
@@ -1221,6 +1246,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652985540852820209, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 652985541264205453, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 652985541438091859, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 652985541459501681, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 652985541708773402, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 715f4d58cdee5cf4aaf2ebf33cff1a38, type: 3}
