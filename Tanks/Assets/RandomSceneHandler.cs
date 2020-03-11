@@ -21,7 +21,7 @@ public class RandomSceneHandler : MonoBehaviour
         victoryTime = 0;
         playerAScore = PlayerPrefs.GetInt("TankAScore");
         playerBScore = PlayerPrefs.GetInt("TankBScore");
-        randomScene = Random.Range(1, 8);
+        randomScene = Random.Range(1, 9);
         currScene = SceneManager.GetActiveScene().buildIndex;
 
         if (playerAScore > 4 | playerBScore > 4)
